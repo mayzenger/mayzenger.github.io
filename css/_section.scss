@@ -1,0 +1,33 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  min-height: 650px;
+
+  &--align--top {
+    justify-content: flex-start;
+  }
+}
+
+.section__title {
+  margin: 0;
+  padding-top: 70px;
+  font-size: 72px;
+  color:  #f9b43b;
+  @include gagalin();
+  line-height: 1;
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--color--black {
+    color: $black;
+    padding: 0;
+  }
+
+  &--delivery {
+    padding: 0;
+  }
+}

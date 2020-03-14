@@ -1,0 +1,21 @@
+.feature {
+  text-align: center;
+}
+
+.feature__img {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+}
+
+.feature__title {
+  font-size: 24px;
+  font-family: 'Lifehack-Medium';
+  margin: 30px 0 0;
+}
+
+.feature__text {
+  margin-top: 24px;
+  font-size: 14px;
+  @include ubuntu($style: light)
+}

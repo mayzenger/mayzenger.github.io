@@ -1,0 +1,50 @@
+.btn {
+  color: #fff;
+  padding: 10px 15px;
+  background: $red;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-flex;
+  margin-left: 15px;
+
+  &:hover {
+    color: #fff;
+    padding: 10px 15px;
+    background: $red2;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-flex;
+    margin-left: 15px;
+  }
+
+  &--submit {
+    margin-left: 0;
+
+    &:hover {
+      margin-left: 0;
+    }
+  }
+
+  &--review {
+    margin: 17px 0 0 20px;
+
+    &:hover {
+      margin: 17px 0 0 20px;
+      background: $red2;
+    }
+  }
+}
+
+.btn-reset {
+  display: flex;
+  color: #fff;
+  margin-left: 20px;
+  align-items: center;
+}
+

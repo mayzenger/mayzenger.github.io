@@ -1,0 +1,33 @@
+.hero__desc {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-size: 65px;
+  font-family: 'Lifehack-Medium';
+  line-height: 1.1;
+}
+
+.hero__text {
+  margin-left: 10px;
+  width: 50%;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+
+}
+
+.hero {
+  background: url("../img/bg/hero-bg.png") center center / cover no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+  flex: .8;
+}
+
