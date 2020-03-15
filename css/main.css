@@ -763,6 +763,21 @@ template {
   position: relative;
   color: #ffffff;
   filter: grayscale(100%);
+  z-index: 1;
+}
+.review::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #000001;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.review:hover::after {
+  opacity: 1;
 }
 .review:hover .review__hover {
   opacity: 1;
