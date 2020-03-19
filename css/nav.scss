@@ -1,9 +1,9 @@
-.menu__list {
+.nav__list {
   display: flex;
   align-items: center;
 } 
 
-.menu__item {
+.nav__item {
   display: flex;
   align-items: center;
   &::before {
@@ -23,7 +23,7 @@
   }
 }
 
-.menu__link {
+.nav__link {
   margin-left: 15px;
   font-size: 13px;
   text-transform: uppercase;

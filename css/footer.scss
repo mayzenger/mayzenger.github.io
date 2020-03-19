@@ -1,0 +1,29 @@
+.footer {
+    background: url('../img/bg/bg-footer.png') center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 80px;
+    padding: 10px 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    &__container {
+        display: flex;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: flex-start;
+    }
+
+    &__address {
+        color: #fff;
+    }
+
+    &__phone {
+        
+    }
+}
