@@ -53,8 +53,6 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
   width: 940px;
   margin: 0 auto;
 }
@@ -544,7 +542,8 @@ template {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 650px;
 }
 .section--align--top {
   justify-content: flex-start;
@@ -635,7 +634,7 @@ template {
 .hero__container {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 .hero {
@@ -941,7 +940,6 @@ template {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  min-height: 100vh;
   background: url("../img/bg/team-bg.png") center no-repeat;
   background-size: cover;
 }
@@ -1047,6 +1045,10 @@ template {
   display: flex;
   align-content: flex-start;
 }
+.menu-acco__item--active .menu-acco__content {
+  width: 540px;
+  overflow: visible;
+}
 .menu-acco__item-title {
   width: 80px;
   flex-shrink: 0;
@@ -1114,6 +1116,7 @@ template {
   top: 95%;
 }
 .menu-acco__content {
+  display: flex;
   width: 0;
   overflow: hidden;
   position: relative;
@@ -1168,6 +1171,7 @@ template {
   z-index: -1;
 }
 .menu-acco__content-text {
+  align-items: baseline;
   padding: 60px 35px 0 35px;
   line-height: 1.5;
 }

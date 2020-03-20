@@ -14,8 +14,7 @@
 .hero__container {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
-  
+  min-height: 100vh;
 
 }
 
@@ -28,6 +27,6 @@
 .hero__content {
   display: flex;
   align-items: center;
-  flex: .8;
+  flex: 0.8;
 }
 

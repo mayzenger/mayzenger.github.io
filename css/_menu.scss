@@ -17,6 +17,11 @@
 		display: flex;
 		align-content: flex-start;
 
+		&--active .menu-acco__content {
+			width: 540px;
+			overflow: visible;
+		}
+
 
 		&-title {
 			width: 80px;
@@ -95,6 +100,7 @@
 	}
 
 	&__content {
+			display: flex;
 			width: 0;
 			overflow: hidden;
 			position: relative;
@@ -156,6 +162,7 @@
 			}
 
 			&-text {
+				align-items: baseline;
 				padding: 60px 35px 0 35px;
 				line-height: 1.5;
 			}
