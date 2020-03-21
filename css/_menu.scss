@@ -167,6 +167,15 @@
 				line-height: 1.5;
 			}
 	}
+
+	&__close-icon {
+		position: absolute;
+		top: 3%;
+		right: 5%;
+		fill: #c1c2c2;
+		width: 20px;
+		height: 20px;
+	}
 }
     
 

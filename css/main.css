@@ -1175,12 +1175,38 @@ template {
   padding: 60px 35px 0 35px;
   line-height: 1.5;
 }
+.menu-acco__close-icon {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  fill: #c1c2c2;
+  width: 20px;
+  height: 20px;
+}
+
+.socials {
+  display: flex;
+}
+.socials__item {
+  margin-right: 20px;
+}
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link-icon {
+  fill: #5a5a5a;
+  width: 20px;
+  height: 20px;
+}
+.socials__link-icon:hover {
+  fill: #ffffff;
+}
 
 .footer {
   background: url("../img/bg/bg-footer.png") center center no-repeat;
   background-size: cover;
   position: absolute;
-  height: 80px;
   padding: 10px 0;
   left: 0;
   right: 0;
@@ -1188,6 +1214,7 @@ template {
 }
 .footer__container {
   display: flex;
+  align-items: center;
 }
 .footer__col {
   display: flex;
@@ -1195,10 +1222,31 @@ template {
   width: 50%;
   align-items: flex-start;
 }
-.footer__address {
-  color: #fff;
+.footer__col-right {
+  width: 50%;
+  flex-direction: row;
+  text-align: left;
+  justify-content: flex-end;
 }
+.footer__address {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+}
+
 .contacts {
   position: relative;
   overflow: hidden;
+}
+
+.phone__icon {
+  margin-top: 13px;
+  width: 11px;
+  height: 11px;
+}
+
+.phone__link {
+  color: #e45028;
+  font-weight: 500;
+  text-decoration: none;
 }

@@ -2,7 +2,6 @@
     background: url('../img/bg/bg-footer.png') center center no-repeat;
     background-size: cover;
     position: absolute;
-    height: 80px;
     padding: 10px 0;
     left: 0;
     right: 0;
@@ -10,6 +9,7 @@
 
     &__container {
         display: flex;
+        align-items: center;
     }
 
     &__col {
@@ -17,13 +17,21 @@
         flex-direction: column;
         width: 50%;
         align-items: flex-start;
+        
+
+        &-right {
+            width: 50%;
+            flex-direction: row;
+            text-align: left;
+            justify-content: flex-end;
+        }
     }
 
     &__address {
+        display: block;
         color: #fff;
+        font-size: 14px;
     }
 
-    &__phone {
-        
-    }
+    
 }
