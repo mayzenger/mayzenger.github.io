@@ -15,16 +15,27 @@
 
 	&__item {
 		display: flex;
-		align-content: flex-start;
+		//align-content: flex-start;
 
-		&--active .menu-acco__content {
-			width: 540px;
-			overflow: visible;
+		&-active  {
+
+			.menu-acco__content{
+				width: 540px;
+				overflow: hidden;
+
+				@include phones {
+					width: 100%;
+				}
+			}
+
+			.menu-acco__item-title-text {
+				color: $yellow;
+			}
 		}
 
 
 		&-title {
-			width: 80px;
+			width: rem(80px);
 			flex-shrink: 0;
 			position: relative;
 			text-decoration: none;
@@ -90,7 +101,7 @@
 				white-space: nowrap;
 				@include gagalin ();
 				color: #fff;
-				font-size: 35px;
+				font-size: rem(35px);
 				transform: rotate(-90deg) translateY(-50%);
 				transform-origin: 0 0;
 				left: 50%;
@@ -163,8 +174,12 @@
 
 			&-text {
 				align-items: baseline;
-				padding: 60px 35px 0 35px;
+				padding: rem(60px) rem(35px) 0 rem(35px);
 				line-height: 1.5;
+
+				@include phones {
+					line-height: 2;
+				}
 			}
 	}
 
@@ -173,8 +188,8 @@
 		top: 3%;
 		right: 5%;
 		fill: #c1c2c2;
-		width: 20px;
-		height: 20px;
+		width: rem(20px);
+		height: rem(20px);
 	}
 }
     

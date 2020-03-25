@@ -5,8 +5,17 @@
 .features__list {
   display: flex;
   justify-content: space-between;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .features__item {
   width: calc(100% / 3 - 26px);
+
+  @include phones {
+    width: 100%;
+    padding: 0 5%;
+  }
 }

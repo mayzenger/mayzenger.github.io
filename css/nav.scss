@@ -1,3 +1,9 @@
+.nav {
+  @include tablets {
+    display: none;
+  }
+}
+
 .nav__list {
   display: flex;
   align-items: center;
@@ -6,13 +12,15 @@
 .nav__item {
   display: flex;
   align-items: center;
+  white-space: nowrap;
+
   &::before {
     content: '';
     display: block;
-    width: 4px;
-    height: 4px;
+    width: rem(4px);
+    height: rem(4px);
     border-radius: 50%;
-    margin-left: 15px;
+    margin-left: rem(15px);
     background: currentColor;
   }
   &:first-child {
@@ -24,8 +32,8 @@
 }
 
 .nav__link {
-  margin-left: 15px;
-  font-size: 13px;
+  margin-left: rem(15px);
+  font-size: rem(13px);
   text-transform: uppercase;
   text-decoration: none;
 }

@@ -14,7 +14,9 @@
     <section class="section section--align--top hero">
       <div class="container hero__container">
         <header class="header">
-          <img class="logo" src="/img/icons/logo.svg" alt="mr burger">
+          <a href="" class="logo">
+            <img class="logo__img" src="/img/icons/logo.svg" alt="mr burger">
+          </a>
           <div class="header__btns">
             <nav class="nav">
               <ul class="nav__list">
@@ -42,6 +44,11 @@
               </ul>
             </nav>
             <a href="#" class="btn">заказать</a>
+            <a href="#" class="nav-hamburger">
+              <span class="nav-hamburger__span"></span>
+              <span class="nav-hamburger__span"></span>
+              <span class="nav-hamburger__span"></span>
+            </a>
           </div>
         </header> 
         <div class="hero__content">
@@ -49,7 +56,7 @@
             <img src="/img/content/burger.png" alt="">
           </div>
           <div class="hero__text">
-            <h1 class="section__title">Мы делаем</h1>
+            <h1 class="section__title section__title-hero">Мы делаем</h1>
             <h3 class="hero__desc">натуральные бургеры</h3>
           </div>
         </div>
@@ -60,7 +67,7 @@
     </section>
     <section class="section features">
       <div class="container">
-        <h2 class="section__title section__title--centered section__title--color--black">мы лучшие</h2>
+        <h2 class="section__title section__title-centered section__title-color-black">мы лучшие</h2>
         <ul class="features__list"> 
           <li class="features__item feature">
             <div class="feature__img">
@@ -111,7 +118,7 @@
 
     <section class="section team">
       <div class="team__content">
-        <h2 class="section__title section__title--team">команда</h2>
+        <h2 class="section__title section__title-team">команда</h2>
         <ul class="team-acco">
           <li class="team-acco__item">
             <div class="team-acco__trigger">Лионель Месси</div>
@@ -178,7 +185,7 @@
     </section>
 
     <section class="section menu">
-      <h2 class="section__title section__title--color--white">меню</h2>
+      <h2 class="section__title section__title-color-white">меню</h2>
       <ul class="menu-acco">
         <li class="menu-acco__item menu-acco__item-diet">
           <a href="#" class="menu-acco__item-title menu-acco__item-title-diet"> 
@@ -224,7 +231,7 @@
             </a>
           </div>
         </li>
-        <li class="menu-acco__item menu-acco__item--active menu-acco__item-meat">
+        <li class="menu-acco__item menu-acco__item-active menu-acco__item-meat">
           <a href="#" class="menu-acco__item-title menu-acco__item-title-meat"> 
             <h2 class="menu-acco__item-title-text">для мясоедов</h2>
           </a>
@@ -266,7 +273,8 @@
                 котлетка такой сочной, а сыр таким расплавленным.
               </p>
             </article>
-            <a href="" class="btn btn--review">Подробнее</a>
+            <a href="" class="btn btn-review">Подробнее</a>
+            <a href="" class="btn btn-review_read">Читать отзыв</a>
           </div>
         </li>
         <li class="reviews__item review">
@@ -283,7 +291,7 @@
                 котлетка такой сочной, а сыр таким расплавленным.
               </p>
             </article>
-            <a href="" class="btn btn--review">Подробнее</a>
+            <a href="" class="btn btn-review">Подробнее</a>
           </div>
         </li>
         <li class="reviews__item review">
@@ -300,7 +308,7 @@
                 котлетка такой сочной, а сыр таким расплавленным.
               </p>
             </article>
-            <a href="" class="btn btn--review">Подробнее</a>
+            <a href="" class="btn btn-review">Подробнее</a>
           </div>
         </li>
         <li class="reviews__item review">
@@ -317,7 +325,7 @@
                 котлетка такой сочной, а сыр таким расплавленным.
               </p>
             </article>
-            <a href="" class="btn btn--review">Подробнее</a>
+            <a href="" class="btn btn-review">Подробнее</a>
           </div>
         </li>
         <li class="reviews__item review">
@@ -334,7 +342,7 @@
                 котлетка такой сочной, а сыр таким расплавленным.
               </p>
             </article>
-            <a href="" class="btn btn--review">Подробнее</a>
+            <a href="" class="btn btn-review">Подробнее</a>
           </div>
         </li>
         <li class="reviews__item review">
@@ -351,7 +359,7 @@
                 котлетка такой сочной, а сыр таким расплавленным.
               </p>
             </article>
-            <a href="" class="btn btn--review">Подробнее</a>
+            <a href="" class="btn btn-review">Подробнее</a>
           </div>
         </li>
         <li class="reviews__item review">
@@ -368,7 +376,7 @@
                 котлетка такой сочной, а сыр таким расплавленным.
               </p>
             </article>
-            <a href="" class="btn btn--review">Подробнее</a>
+            <a href="" class="btn btn-review">Подробнее</a>
           </div>
         </li>
         <li class="reviews__item review">
@@ -385,7 +393,7 @@
                 котлетка такой сочной, а сыр таким расплавленным.
               </p>
             </article>
-            <a href="" class="btn btn--review">Подробнее</a>
+            <a href="" class="btn btn-review">Подробнее</a>
           </div>
         </li>
       </ul>
@@ -395,7 +403,7 @@
 
     <section class="section order-section">
       <div class="container">
-        <h2 class="section__title section__title--centered section__title--delivery">
+        <h2 class="section__title section__title-centered section__title-delivery">
           Закажите доставку
         </h2>
         <form class="form">
@@ -439,30 +447,30 @@
             <div class="form__row">
               <label class="form__label">
                 <div class="form__title">Комментарий</div>
-                <textarea class="form__textarea"></textarea>
+                <textarea class="form__textarea" name="comment"></textarea>
               </label>
             </div>
             <div class="form__row form__row--radio">
               <label class="form__radio-label">
                 <input class="form__input-radio" type="radio" name=payment checked>
                 <div class="form__radio-style"></div>
-                <span class="form__title">Потребуется сдача</span>
+                <div class="form__title">Потребуется сдача</div>
               </label>
               <label class="form__radio-label">
                 <input class="form__input-radio" type="radio" name=payment checked>
                 <div class="form__radio-style"></div>
-                <span class="form__title">Оплата по карте</span>
+                <div class="form__title">Оплата по карте</div>
               </label>
             </div>
             <div class="form__row">
               <label class="form__label form__label--checkbox">
                 <input class="form__input-checkbox" type="checkbox">
                 <div class="form__checkbox-style"></div>
-                <span class="form__title">Не перезванивать</span>
+                <div class="form__title">Не перезванивать</div>
               </label>
             </div>
             <div class="form__row form__row--submit">
-              <a class="btn btn--submit">Заказать</a>
+              <a class="btn btn-submit">Заказать</a>
               <a class="btn-reset">Очистить</a>
             </div>
           </div>

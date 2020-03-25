@@ -1,29 +1,30 @@
 .btn {
   color: #fff;
-  padding: 10px 15px;
+  padding: rem(10px) rem(15px);
   background: $red;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: 5px;
-  font-size: 13px;
+  border-radius: rem(5px);
+  font-size: rem(13px);
   font-weight: 500;
   display: inline-flex;
-  margin-left: 15px;
+  margin-left: rem(15px);
+  
 
   &:hover {
     color: #fff;
-    padding: 10px 15px;
+    padding: rem(10px) rem(15px);
     background: $red2;
     text-decoration: none;
     text-transform: uppercase;
-    border-radius: 5px;
-    font-size: 13px;
+    border-radius: rem(5px);
+    font-size: rem(13px);
     font-weight: 500;
     display: inline-flex;
-    margin-left: 15px;
+    margin-left: rem(15px);
   }
 
-  &--submit {
+  &-submit {
     margin-left: 0;
 
     &:hover {
@@ -31,12 +32,44 @@
     }
   }
 
-  &--review {
-    margin: 17px 0 0 20px;
+  &-review {
+    margin: rem(17px) 0 0 rem(20px);
+
+    @include tablets {
+      margin: rem(17px) 0 0;
+    }
+
+    @include phones {
+      display: none;
+    }
+    
 
     &:hover {
-      margin: 17px 0 0 20px;
+      margin: rem(17px) 0 0 rem(20px);
       background: $red2;
+      
+      @include tablets {
+        margin: rem(17px) 0 0;
+      }
+
+      @include phones {
+        display: none;
+      }
+    }
+
+    &_read {
+      
+
+      @include phones {
+        z-index: 0;
+      }
+
+      &:hover {
+        margin: rem(17px) 0 0 rem(20px);
+        background: $red2;
+
+      }
+    
     }
   }
 }
@@ -44,7 +77,6 @@
 .btn-reset {
   display: flex;
   color: #fff;
-  margin-left: 20px;
+  margin-left: rem(20px);
   align-items: center;
 }
-

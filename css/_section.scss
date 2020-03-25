@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  min-height: 650px;
+  width: 100%;
+  min-height: rem(650px);
   
 
   &--align--top {
@@ -12,36 +13,55 @@
 
   &__title {
     margin: 0;
-    padding-top: 70px;
-    font-size: 72px;
+    padding-top: rem(70px);
+    font-size: rem(72px);
     color:  #f9b43b;
     @include gagalin();
     line-height: 1;
-    
+    //white-space: nowrap;
 
-    &--centered {
+    @include phones {
+      font-size: rem(63px);
+    }
+    
+    &-hero {
+      @include tablets {
+        padding-top: rem(40px);
+        text-align: center;
+      }
+    }
+
+    &-centered {
       text-align: center;
     }
 
-    &--color--black {
+    &-color-black {
       color: $black;
       padding: 0;
     }
 
-    &--color--white {
+    &-color-white {
       position: absolute;
       left: 7%;
       top: 20%;
       padding: 0;
       color: #fff;
+
+      @include tablets {
+        top: 8%;
+      }
     }
 
-    &--delivery {
+    &-delivery {
       padding: 0;
     }
 
-    &--team {
+    &-team {
       padding: 0;
+
+      @include phones {
+        font-size: rem(50px);
+      }
     }
 
 
@@ -51,8 +71,8 @@
 
 // .section__title {
 //   margin: 0;
-//   padding-top: 70px;
-//   font-size: 72px;
+//   padding-top: rem(70px);
+//   font-size: rem(72px);
 //   color:  #f9b43b;
 //   @include gagalin();
 //   line-height: 1;
