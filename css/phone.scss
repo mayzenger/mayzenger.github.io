@@ -1,3 +1,9 @@
+.phone {
+  @include phones {
+    margin-bottom: rem(10px);;
+}
+}
+
 .phone__icon {
   margin-top: rem(13px);
   width: rem(11px);

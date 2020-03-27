@@ -10,6 +10,10 @@
     &__container {
         display: flex;
         align-items: center;
+        
+        @include phones {
+            flex-direction: column;
+        }
     }
 
     &__col {
@@ -17,6 +21,11 @@
         flex-direction: column;
         width: 50%;
         align-items: flex-start;
+
+        @include phones {
+            align-items: center;
+            text-align: center;
+        }
         
 
         &-right {
@@ -24,6 +33,10 @@
             flex-direction: row;
             text-align: left;
             justify-content: flex-end;
+
+            @include phones {
+                justify-content: center;
+            }
         }
     }
 
@@ -31,6 +44,10 @@
         display: block;
         color: #fff;
         font-size: rem(14px);
+
+        @include phones {
+            white-space: nowrap;
+        }
     }
 
     

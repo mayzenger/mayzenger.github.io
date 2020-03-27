@@ -20,8 +20,12 @@
 		&-active  {
 
 			.menu-acco__content{
-				width: 540px;
+				width: rem(540px);
 				overflow: hidden;
+
+				@include desktop {
+					width: 100%;
+				}
 
 				@include phones {
 					width: 100%;
